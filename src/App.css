@@ -23,6 +23,7 @@
     display: flex;
     align-items: center;
     flex-direction: column;
+    background: #c1c1c1;
 }
 .tabs{
     display: flex;
@@ -43,8 +44,11 @@
     height: 50px;
     border-right: 1px solid #b7b3b3;
     border-radius: 10px;
+    cursor: pointer;
 }
-
+.tab-leagues:active{
+    color: white;
+}
 .tab-standings{
     width: 300px;
     display: flex;
@@ -54,8 +58,11 @@
     color: #b7b3b3;
     height: 50px;
     border-radius: 10px;
+    cursor: pointer;
 }
-
+.tab-standings:active{
+    color: white;
+}
 
 
 
