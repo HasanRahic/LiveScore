@@ -64,6 +64,22 @@
     color: white;
 }
 
+.leagues-container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4,2fr);
+    justify-items: center;
+    text-align: center;
+}
+.league-div img{
+    width: 200px;
+}
+.league-div{
+    margin: 20px 0;
+}
+.league-div:hover{
+    transform: scale(1.1);
+}
 
 
 

@@ -20,7 +20,7 @@ const Leagues = () => {
     <div className='leagues-container'>
       {data.map((data)=> (
         <div key={data.id} className="league-div">
-          <img src={data.logos.dark} alt='#'/>
+          <img src={data.logos.light} alt='#'/>
           <h1>{data.name}</h1>
         </div>
       ))}
