@@ -10,7 +10,8 @@ const Standings = () => {
 
     useEffect(()=>{
       axios(`https://api-football-standings.azharimm.site/leagues/${selectedLeague}/standings?season=${selectedYear}&sort=asc`).then((res)=>{
-        console.log(res.data)
+        console.log(res.data.data.standings);
+        setData(res.data.data.standings);
       })
       .catch((err) => console.log(err))
     },[selectedLeague, selectedYear])
@@ -54,7 +55,13 @@ const Standings = () => {
           <option value="2024">2024</option>
         </select>
       </div>
-      <div className="standing-results"></div>
+      <div className="standing-results">
+        {data.map((data, index)=>(
+          <div key={data.team.id} className='standing-info-div'>
+            <h1><span>{`${index+1}.`} <img src={data.team.logos[0].href} alt="#" style={{width:'30px'}} /></span>{data.team.shortDisplayName}</h1>
+          </div>
+        ))}
+      </div>
     </div>
   )
 }

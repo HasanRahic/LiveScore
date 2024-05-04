@@ -90,6 +90,19 @@ select{
 }
 
 
+.standing-results{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.standing-info-div{
+    margin: 20px 0;
+}
+
+
+
 
 
 .footer{
