@@ -72,10 +72,12 @@
     text-align: center;
 }
 .league-div img{
-    width: 200px;
+    width: 180px;
+    border-radius: 10px;
 }
 .league-div{
     margin: 20px 0;
+    border-radius: 5px;
 }
 .league-div:hover{
     transform: scale(1.1);

@@ -6,7 +6,8 @@ const Leagues = () => {
 
   const [data, setData] = useState([]);
 
-
+  
+  
   useEffect(() => {
     axios("https://api-football-standings.azharimm.site/leagues").then(
       (res)=>{
